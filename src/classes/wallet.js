@@ -31,7 +31,12 @@ class Wallet {
 
     // Sign the SHA with this wallet's private key
     const signature = shaSign.sign(this.privateKey)
-    Chain.instance.insertBlock(transaction, this.publicKey, 'signature')
+
+    try {
+      Chain.instance.insertBlock(transaction, this.publicKey, signature)
+    } catch (err) {
+      console.log(err.message)
+    }
   }
 }
 

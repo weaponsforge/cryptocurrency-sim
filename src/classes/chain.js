@@ -31,6 +31,8 @@ class Chain {
       const block = new Block(this.getPreviousBlockHash(), transaction)
       console.log('Block added', block.toString())
       this.chain.push(block)
+    } else {
+      throw new Error('Invalid transaction.')
     }
   }
 }
