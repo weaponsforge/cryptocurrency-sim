@@ -10,7 +10,7 @@
 ## Installation
 
 1. Clone this repository.  
-`git clone https://github.com/weaponsforge/cryptocurreny-test.git`
+`git clone https://github.com/weaponsforge/cryptocurrency-test.git`
 
 2. Install dependencies.  
 `npm install`
